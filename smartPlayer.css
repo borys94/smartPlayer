@@ -40,6 +40,9 @@
 .video-control {
     margin: 5px;
     display: inline-block;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
 }
 
 #video-progress {
@@ -151,6 +154,7 @@ body {
     top: -20px;
 }
 
+
 .video-next {
     color: white;
     font-family: "Lato";
@@ -169,4 +173,176 @@ body {
 .video-next-title {
     float: left;
     font-weight: bold;
+}
+
+#media-player {
+    background-color: #333;
+}
+
+/* white skin */
+
+.white-skin {
+    background-color: white !important;
+}
+
+.white-skin #media-controls .video-control:nth-child(1) {
+    background-image: url('/assets/img/default.jpg');
+    background-position: 273px 262px;
+}
+
+.white-skin #media-controls .video-control:nth-child(2) {
+    background-image: url('/assets/img/default.jpg');
+    background-position: 457px 260px;
+}
+
+.white-skin #media-controls .video-control:nth-child(3) {
+    background-image: url('/assets/img/default.jpg');
+    background-position: 212px 262px;
+}
+
+.white-skin .pause {
+    background-image: url('/assets/img/default.jpg') !important;
+    background-position: 397px 262px !important;
+}
+
+.white-skin #custom-progress {
+    height: 8px !important;
+    border: 1px solid black !important;
+    border-radius: 5px;
+}
+
+.white-skin #progress-circle {
+    border: 1px solid black !important;
+    background-color: white !important;
+    width: 14px;
+    height: 14px;
+}
+
+.white-skin #progress-time {
+    height: 8px;
+    background-color: #222;
+}
+
+.white-skin .video-next-title{
+    color: #222 !important;
+}
+
+.white-skin #video-name {
+    color: #222;
+}
+
+.white-skin #video-time {
+    color: #222;
+}
+
+/* blue-skin */
+
+.blue-skin {
+    background-color: white !important;
+}
+
+.blue-skin #media-controls .video-control:nth-child(1) {
+    background-image: url('/assets/img/default.jpg');
+    background-position: 273px 187px;
+}
+
+.blue-skin #media-controls .video-control:nth-child(2) {
+    background-image: url('/assets/img/default.jpg');
+    background-position: 457px 186px;
+}
+
+.blue-skin #media-controls .video-control:nth-child(3) {
+    background-image: url('/assets/img/default.jpg');
+    background-position: 212px 187px;
+}
+
+.blue-skin .pause {
+    background-image: url('/assets/img/default.jpg') !important;
+    background-position: 397px 187px !important;
+}
+
+.blue-skin #custom-progress {
+    height: 8px !important;
+    border: 1px solid black !important;
+    border-radius: 5px;
+}
+
+.blue-skin #progress-circle {
+    border: 1px solid rgba(15, 103, 144, 1) !important;
+    background-color: rgba(163, 220, 246, 1) !important;
+    width: 14px;
+    height: 14px;
+}
+
+.blue-skin #progress-time {
+    height: 8px;
+    background-color: #2AB6F8;
+}
+
+.blue-skin .video-next-title{
+    color: #222 !important;
+}
+
+.blue-skin #video-name {
+    color: #222;
+}
+
+.blue-skin #video-time {
+    color: #222;
+}
+
+/* dark-skin */
+
+.dark-skin {
+    background-color: white !important;
+}
+
+.dark-skin #media-controls .video-control:nth-child(1) {
+    background-image: url('/assets/img/default.jpg');
+    background-position: 273px 335px;
+}
+
+.dark-skin #media-controls .video-control:nth-child(2) {
+    background-image: url('/assets/img/default.jpg');
+    background-position: 457px 333px;
+}
+
+.dark-skin #media-controls .video-control:nth-child(3) {
+    background-image: url('/assets/img/default.jpg');
+    background-position: 212px 335px;
+}
+
+.dark-skin .pause {
+    background-image: url('/assets/img/default.jpg') !important;
+    background-position: 397px 335px !important;
+}
+
+.dark-skin #custom-progress {
+    height: 8px !important;
+    border: 1px solid black !important;
+    border-radius: 5px;
+}
+
+.dark-skin #progress-circle {
+    background-color: #222;
+    border: 2px solid #111;
+    width: 14px;
+    height: 14px;
+}
+
+.dark-skin #progress-time {
+    height: 8px;
+    background-color: #666;
+}
+
+.dark-skin .video-next-title{
+    color: #222 !important;
+}
+
+.dark-skin #video-name {
+    color: #222;
+}
+
+.dark-skin #video-time {
+    color: #222;
 }
