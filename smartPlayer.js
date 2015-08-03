@@ -10,20 +10,16 @@
         var mouseX;
         var mouseY;
         var marginLeft;
+        var $this;
         
         var onChange;
         
         var mediaControlsHtml = '<div id="media-controls">\n\
                     <div class="video-control">\n\
-                        <div class="arrow-left-min"></div>\n\
-                        <div class="arrow-left-min"></div>\n\
+                    </div>\n\
+                    <div class="video-control play">\n\
                     </div>\n\
                     <div class="video-control">\n\
-                        <div class="arrow-right play"></div>\n\
-                    </div>\n\
-                    <div class="video-control">\n\
-                        <div class="arrow-right-min"></div>\n\
-                        <div class="arrow-right-min"></div>\n\
                     </div>\n\
                     <div id="video-inf">\n\
                         <div id="video-info">\n\
@@ -60,14 +56,15 @@
             if (video.paused || video.ended) {
 		// Change the button to be a pause button
 		//changeButtonType(playPauseBtn, 'pause');
-		// Play the media
+		
+                $this.find('.play').addClass('pause');
 		video.play();
             }
             // Otherwise it must currently be playing
             else {
                     // Change the button to be a play button
                     //changeButtonType(playPauseBtn, 'play');
-                    // Pause the media
+                    $this.find('.play').removeClass('pause');
                     video.pause();
             }
         }
@@ -160,7 +157,8 @@
             else if (typeof options === 'object' || ! options ){
                 //wywołany konstruktor
                 settings = $.extend( {
-                  list: []
+                  list: [],
+                  skin: 'white-skin'
                 }, options);
                 //inicjalizacja pluginu
                 $this = $(this);
@@ -239,6 +237,7 @@
                     
                 }
                 video.controls = false;
+                $this.addClass(settings.skin);
                 
                 var titleWidth = $('#video-name > div').get(0).clientWidth;
                 console.log(titleWidth);
